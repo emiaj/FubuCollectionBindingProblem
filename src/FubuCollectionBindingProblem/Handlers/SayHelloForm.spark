@@ -1,0 +1,16 @@
+﻿<viewdata model="FubuCollectionBindingProblem.Handlers.SayHelloModel" />
+<html>
+<head>
+</head>
+<body>
+    ${this.FormFor[[FubuCollectionBindingProblem.Handlers.SayHelloModel]]()} 
+    <label>Pattern:</label>${this.InputFor(x=>x.Pattern)}
+    <for each="var people in Model.Room.Peoples">
+    <div>
+    ${peopleIndex+1})Name: ${this.InputFor(x=>x.Room.Peoples[peopleIndex].Name)}
+    </div>
+    </for>
+    <input type="submit" />
+    </form>
+</body>
+</html>

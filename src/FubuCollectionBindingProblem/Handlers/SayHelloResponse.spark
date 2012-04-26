@@ -1,0 +1,2 @@
+﻿<viewdata model="FubuCollectionBindingProblem.Handlers.SayHelloResponse" />
+${Model.Message}
