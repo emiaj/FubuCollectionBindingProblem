@@ -22,7 +22,7 @@ namespace FubuCollectionBindingProblem.Handlers
         public SayHelloResponse Command(SayHelloModel input)
         {
             var builder = new StringBuilder();
-            // FIXME: input.Room.Peoples is empty!
+            // FIXME: input.Peoples is empty!
             input.Peoples.Each(x => builder.AppendLine(string.Format(input.Pattern, x.Name)));
             return new SayHelloResponse
             {
